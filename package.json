@@ -8,5 +8,8 @@
         "netlify-lambda": "^2.0.16",
         "nodemailer": "^6.9.3",
         "serverless-http": "^3.2.0"
+    },
+    "scripts": {
+        "build": "npm install"
     }
 }

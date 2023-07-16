@@ -9,7 +9,7 @@ const router = express.Router();
 
 app.use(
     cors({
-        origin: ["http://127.0.0.1:5500"],
+        origin: ["https://markuss-portfolio.netlify.app"],
     })
 );
 app.use(express.json());

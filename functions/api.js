@@ -3,9 +3,18 @@ const serverless = require("serverless-http");
 const nodemailer = require("nodemailer");
 require("dotenv").config();
 const cors = require("cors");
+const rateLimit = require("express-rate-limit");
 
 const app = express();
 const router = express.Router();
+
+// Limit requests from the same IP
+const limiter = rateLimit({
+    windowMs: 24 * 60 * 60 * 1000, // 24 hours
+    max: 10, // Maximum requests per windowMs
+});
+
+app.use(limiter);
 
 app.use(
     cors({

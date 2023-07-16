@@ -9,7 +9,7 @@ const router = express.Router();
 
 app.use(
     cors({
-        origin: ["https://markuss-portfolio.netlify.app"],
+        origin: ["https://markuss-portfolio.netlify.app/"],
     })
 );
 app.use(express.json());

@@ -18,7 +18,10 @@ app.use(limiter);
 
 app.use(
     cors({
-        origin: ["https://markuss-portfolio.netlify.app"],
+        origin: [
+            "https://markuss-portfolio.netlify.app",
+            "https://main--markuss-portfolio.netlify.app/",
+        ],
     })
 );
 app.use(express.json());

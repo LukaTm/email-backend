@@ -20,7 +20,7 @@ app.use(
     cors({
         origin: [
             "https://markuss-portfolio.netlify.app",
-            "https://main--markuss-portfolio.netlify.app/",
+            "https://main--markuss-portfolio.netlify.app",
         ],
     })
 );
